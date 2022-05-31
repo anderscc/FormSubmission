@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="RegistrationForm.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="RegistrationForm.js"></script>
+
+
+</head>
+
+<body>
+    <h1><u> Registration Form </u> </h1>
+    <form action="RegistrationForm.php" id="registerForm" method="post">
+        <div>
+            <label for="fname"> First Name: </label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br>
+        </div> <span id="fnameResponse"></span>
+
+        <div>
+            <label for="lname"> Last Name: </label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br>
+        </div> <span id="lnameResponse"></span>
+
+        <div>
+            <label for="email"> Email: </label><br>
+            <input type="text" id="email" name="email" placeholder="Enter your Email"><br>
+        </div> <span id="emailResponse"></span>
+
+        <div>
+            <label for="mobile"> Mobile: </label><br>
+            <input type="number" id="mobile" name="mobile" min="0000000001" max="9999999999"
+                placeholder="Only 10 digits are allowed">
+        </div> <span id="mobileResponse"></span>
+
+        <div>
+            <label for="gender">Gender</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="gender"> Male </label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="gender"> Female </label>
+        </div><span id="genderResponse"></span>
+
+        <div>
+            <label for="city"> City: </label><br>
+            <input type="text" id="city" name="city"><br>
+        </div> <span id="cityResponse"></span>
+
+        <div>
+            <label for="state"> State: </label><br>
+            <input type="text" id="state" name="state"><br>
+        </div> <span id="stateResponse"></span>
+
+        <div>
+            <label for="qual"> Qualification: </label><br>
+            <select type="text" id="qual" name="qual"><br>
+                <option value="qualplacehold" disabled selected> Select Qualifaction </option>
+                <option value="Graduation"> Graduation</option>
+                <option value="BTech"> BTech</option>
+                <option value="MTech"> MTech</option>
+                <option value="MCA"> MCA</option>
+                <option value="BCA"> BCA</option>
+            </select><br>
+        </div><span id="qualResponse"></span>
+
+        <div>
+            <label for="pword"> Password: </label><br>
+            <input type="password" id="pword" name="pword">
+        </div><span id="pwordResponse"></span>
+
+        <div>
+            <input type="submit" value="Register">
+        </div>
+
+
+    </form>
+
+
+
+</body>
